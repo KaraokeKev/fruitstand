@@ -6,7 +6,7 @@ ansible-playbook tmp.yml -t 1_2_3
 
 
 
-For tags, if it starts with a number it must be in quotes. e.g.
+Tags must be strings. In Python 3.6+, underscores are considered convenience notation for numbers. Therefore 1_2_3 would be considered an integer of value 123.
 
     - debug:
         msg: "I am a banana"
